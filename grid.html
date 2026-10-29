@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auracle Realtors · Instagram grid</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Figtree:wght@400;500;600;700&display=swap">
+<style>body{margin:0;background:#FFFFFF}</style>
+<style>body{background:#F4F2EE}#dc-root>div{margin:0 auto;box-shadow:0 0 40px rgba(0,0,0,.08)}</style>
+<script src="dc-lite.js"></script>
+</head>
+<body>
+<template id="dc-template">
+<div style="width: 430px; min-height: 1640px; background: #FFFFFF; color: #111; font-family: Figtree, 'Helvetica Neue', Arial, sans-serif; font-size: 14px; line-height: 1.4; box-sizing: border-box">
+
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 16px 8px">
+    <div style="display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 19px">auracle.realtors
+      <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div style="display: flex; gap: 18px">
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></svg>
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: center; gap: 20px; padding: 10px 16px">
+    <div style="width: 90px; height: 90px; border-radius: 50%; padding: 3px; background: conic-gradient(from 200deg, #C9A97A, #E9DCC6, #0B2E28, #C9A97A); flex: none">
+      <div style="width: 100%; height: 100%; border-radius: 50%; background: #0B2E28; border: 3px solid #FFFFFF; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #F6F6F3">
+        <svg aria-hidden="true" width="26" height="26" viewBox="0 0 40 40" fill="none" stroke="#C9A97A" stroke-width="2"><path d="M20 4 L35 36 H5 Z"/><path d="M12 25 H28"/></svg>
+        <div style="font-family: 'Bodoni Moda', Georgia, serif; font-size: 8px; letter-spacing: 0.24em; margin-top: 3px">AURACLE</div>
+      </div>
+    </div>
+    <div style="display: flex; flex: 1; justify-content: space-around; text-align: center">
+      <div><div style="font-weight: 700; font-size: 17px">15</div><div style="font-size: 13px">posts</div></div>
+      <div><div style="font-weight: 700; font-size: 17px">0</div><div style="font-size: 13px">followers</div></div>
+      <div><div style="font-weight: 700; font-size: 17px">0</div><div style="font-size: 13px">following</div></div>
+    </div>
+  </div>
+
+  <div style="padding: 4px 16px 0; display: flex; flex-direction: column; gap: 2px">
+    <div style="font-weight: 700">Auracle Realtors | Rajat</div>
+    <div style="color: #737373; font-size: 13px">Real estate agent</div>
+    <div>Dubai property, explained calmly.</div>
+    <div>Off-plan · Ready homes · Golden Visa routes</div>
+    <div>Comment GUIDE for the free buyer's checklist</div>
+    <div style="color: #00376B; font-weight: 600; display: flex; align-items: center; gap: 4px"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00376B" stroke-width="2.2"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1 1M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1-1"/></svg>[YOUR LINK]</div>
+  </div>
+
+  <div style="display: flex; gap: 6px; padding: 14px 16px">
+    <div style="flex: 1; background: #0B2E28; color: #F6F6F3; border-radius: 8px; text-align: center; padding: 7px 0; font-weight: 600">Follow</div>
+    <div style="flex: 1; background: #EFEFEF; border-radius: 8px; text-align: center; padding: 7px 0; font-weight: 600">Message</div>
+    <div style="flex: 1; background: #EFEFEF; border-radius: 8px; text-align: center; padding: 7px 0; font-weight: 600">WhatsApp</div>
+  </div>
+
+  <div style="display: flex; gap: 14px; padding: 2px 16px 16px; overflow: hidden">
+    <sc-for list="{{highlights}}" as="h" hint-placeholder-count="5">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; flex: none">
+        <div style="width: 64px; height: 64px; border-radius: 50%; border: 1px solid #DBDBDB; padding: 3px; box-sizing: border-box">
+          <div style="width: 100%; height: 100%; border-radius: 50%; overflow: hidden; position: relative; background: #0B2E28">
+            <img src="{{h.img}}" alt="" style="width: 100%; height: 100%; object-fit: cover; object-position: {{h.pos}}">
+            <div style="position: absolute; inset: 0; background: rgba(11,46,40,0.35)"></div>
+          </div>
+        </div>
+        <div style="font-size: 12px">{{h.label}}</div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display: flex; border-top: 1px solid #DBDBDB">
+    <div style="flex: 1; display: flex; justify-content: center; padding: 10px 0; border-bottom: 1.5px solid #111"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="1.8"><rect x="3" y="3" width="18" height="18"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></div>
+    <div style="flex: 1; display: flex; justify-content: center; padding: 10px 0"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 9l5 3-5 3z"/></svg></div>
+    <div style="flex: 1; display: flex; justify-content: center; padding: 10px 0"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="1.8"><circle cx="12" cy="9" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px">
+    <sc-for list="{{posts}}" as="p" hint-placeholder-count="15">
+      <div style="position: relative; aspect-ratio: 4 / 5; background: {{p.bg}}; color: {{p.ink}}; overflow: hidden">
+        <sc-if value="{{p.hasImg}}">
+          <img src="{{p.img}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: {{p.pos}}">
+          <div style="position: absolute; inset: 0; background: {{p.shade}}"></div>
+        </sc-if>
+        <div style="position: absolute; inset: 0; padding: 10px 10px 9px; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start">
+            <span style="font-size: 7px; letter-spacing: 0.24em; font-weight: 700; color: #F6F1E6; text-shadow: 0 1px 3px rgba(0,0,0,.55)">{{p.kicker}}</span>
+            <sc-if value="{{p.reel}}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M8 5v14l11-7z"/></svg></sc-if>
+            <sc-if value="{{p.carousel}}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="{{p.ink}}" stroke-width="2"><rect x="7" y="7" width="13" height="13" rx="2"/><path d="M4 16V5a1 1 0 0 1 1-1h11"/></svg></sc-if>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <div style="font-family: 'Bodoni Moda', Georgia, serif; font-size: {{p.size}}; line-height: 1.04; font-weight: 400; font-style: {{p.style}}">{{p.title}}</div>
+            <div style="height: 1px; width: 22px; background: {{p.accent}}"></div>
+            <div style="display: flex; justify-content: space-between; align-items: flex-end">
+              <span style="font-size: 7px; color: {{p.sub}}">{{p.foot}}</span>
+              <span style="font-family: 'Bodoni Moda', Georgia, serif; font-size: 7.5px; letter-spacing: 0.22em; color: {{p.accent}}">AURACLE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="padding: 16px; font-size: 12px; color: #737373; text-align: center"><a href="index.html" style="color:#0B2E28;font-weight:600">Back to the Growth Room</a><br>Brand grid concept · bracketed copy is filled in with Rajat's real details · photography licensed from Storyblocks</div>
+</div>
+</template>
+<div id="dc-root"></div>
+<script>
+class Component extends DCLogic {
+  renderVals() {
+    const PH = { bg: '#0B2E28', ink: '#FFFFFF', accent: '#E4CFA6', sub: '#E9E4DA', hasImg: true };
+    const G = { bg: '#0B2E28', ink: '#F6F6F3', accent: '#C9A97A', sub: '#C5D2CD', hasImg: false, img: '', pos: '50% 50%' };
+    const S = { bg: '#E9DCC6', ink: '#14211D', accent: '#7A6240', sub: '#5E5446', hasImg: false, img: '', pos: '50% 50%' };
+    const P = { bg: '#F6F6F3', ink: '#0B2E28', accent: '#8A6D42', sub: '#6B7772', hasImg: false, img: '', pos: '50% 50%' };
+    const R = { reel: true, carousel: false };
+    const C = { reel: false, carousel: true };
+    const N = { reel: false, carousel: false };
+    const L = { bg: '#E9DCC6', ink: '#FFFFFF', accent: '#E4CFA6', sub: '#F1EBDF', hasImg: true, light: true };
+    const posts = [
+      { ...PH, ...R, img: 'img-burj-sunrise-vertical.jpg', pos: '50% 20%', kicker: 'OFF-PLAN', title: 'Off-plan in 60 seconds', foot: 'Watch the reel', size: '17px', style: 'normal' },
+      { ...L, ...C, img: 'img-luxury-interior.jpg', pos: '30% 50%', kicker: 'THE MATH', title: 'Rent or own?', foot: 'Swipe for the numbers', size: '24px', style: 'italic' },
+      { ...PH, ...R, img: 'img-living-room.jpg', pos: '35% 50%', kicker: 'INSIDE', title: 'A Downtown home, room by room', foot: 'Tour', size: '15px', style: 'normal' },
+      { ...PH, ...C, img: 'img-palm-panorama.jpg', pos: '20% 50%', kicker: 'GUIDE', title: 'Golden Visa routes, simply', foot: 'Carousel', size: '18px', style: 'normal' },
+      { ...PH, ...R, img: 'img-marina-night.jpg', pos: '40% 50%', kicker: 'FACE-OFF', title: 'Marina vs Downtown', foot: 'Which suits you?', size: '17px', style: 'italic' },
+      { ...L, ...N, img: 'img-marina-canal-vertical.jpg', pos: '50% 60%', kicker: 'MYTH', title: '“Off-plan is risky.” Is it?', foot: 'Myth vs fact', size: '17px', style: 'normal' },
+      { ...PH, ...R, img: 'img-burj-low-angle.jpg', pos: '50% 30%', kicker: 'MEET RAJAT', title: 'Why I started Auracle', foot: 'My story', size: '17px', style: 'italic' },
+      { ...PH, ...C, img: 'img-skyline-from-apartment.jpg', pos: '70% 50%', kicker: 'DECODED', title: 'Payment plans: 60/40, 1% monthly', foot: 'Save for later', size: '15px', style: 'normal' },
+      { ...PH, ...R, img: 'img-villa-pool.jpg', pos: '40% 50%', kicker: 'VILLA LIFE', title: 'Garden, pool, school run', foot: 'Villa communities', size: '15px', style: 'normal' },
+      { ...L, ...N, img: 'img-living-room.jpg', pos: '85% 50%', kicker: 'CLIENT STORY', title: '[CLIENT QUOTE]', foot: 'With permission only', size: '17px', style: 'italic' },
+      { ...PH, ...C, img: 'img-marina-sunrise.jpg', pos: '50% 50%', kicker: 'WHERE TO BUY', title: '[YOUR PRICE] budget, three areas', foot: 'Carousel', size: '14px', style: 'normal' },
+      { ...PH, ...N, img: 'img-burj-sunrise-vertical.jpg', pos: '50% 75%', kicker: 'MARKET PULSE', title: 'This month in Dubai', foot: '[VERIFIED DATA REQUIRED]', size: '18px', style: 'normal' },
+      { ...PH, ...R, img: 'img-skyline-from-apartment.jpg', pos: '15% 50%', kicker: 'THE VIEW', title: 'What AED [PRICE] gets you', foot: 'Reel', size: '15px', style: 'italic' },
+      { ...L, ...R, img: 'img-luxury-interior.jpg', pos: '85% 50%', kicker: 'ASK RAJAT', title: 'Your questions, answered', foot: 'Live Q&A', size: '17px', style: 'italic' },
+      { ...PH, ...N, img: 'img-palm-panorama.jpg', pos: '80% 50%', kicker: 'CHECKLIST', title: 'Comment GUIDE', foot: 'Free buyer checklist', size: '19px', style: 'normal' }
+    ].map((p) => ({ ...p, shade: p.light
+      ? 'linear-gradient(180deg, rgba(20,33,29,0.10) 0%, rgba(20,33,29,0) 30%, rgba(122,98,64,0.82) 100%)'
+      : 'linear-gradient(180deg, rgba(11,46,40,0.15) 0%, rgba(11,46,40,0) 30%, rgba(11,46,40,0.88) 100%)' }));
+    const highlights = [
+      { label: 'Off-plan', img: 'img-marina-canal-vertical.jpg', pos: '50% 40%' },
+      { label: 'Areas', img: 'img-marina-night.jpg', pos: '30% 50%' },
+      { label: 'Homes', img: 'img-living-room.jpg', pos: '40% 50%' },
+      { label: 'Villas', img: 'img-villa-pool.jpg', pos: '60% 50%' },
+      { label: 'About', img: 'img-burj-low-angle.jpg', pos: '50% 30%' }
+    ];
+    return { posts, highlights };
+  }
+}
+dcStart(Component);
+</script>
+</body>
+</html>
